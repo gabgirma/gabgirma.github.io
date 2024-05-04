@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+}
+
+.inria-serif-bold{
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inria-serif-regular{
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.gelasio{
+    font-family: "Gelasio", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.abel-regular{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+  
+
+.gridcont{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "picture"
+        "main"
+        "footer";
+}
+
+.flowerpic{
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    width: 60%;
+    height: auto;
+    
+}
+
+.mappic{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-top: 100px;
+}
+
+header{
+    grid-area: header;
+    background-color: #efc3d1;
+    
+}
+
+main{
+    grid-area: main;
+    
+}
+
+.maina{
+    grid-area: maina;
+    margin-top: 100px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #efc3d1;
+    margin-bottom: 0;
+    height: 100px;
+    font-size: large;
+    align-items: center;
+}
+
+img{
+    grid-area: picture;
+    grid-area: pics;
+    
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    margin-left: 20px;
+}
+
+#gradient{
+    background-image: linear-gradient(
+    -30deg,
+    #ef798a 70%,
+    #e5c3d1 100%);
+    height: 60px;
+    width: 95%;
+    margin-top: 5px;
+    background-size: 298%;
+    background-position: 0% 50%, 0% 100%;
+    border-radius: .5rem;
+    transition: background-position 1s ease
+}
+#gradient{
+    background-image: linear-gradient(
+    -30deg,
+    #ef798a 60%,
+    #e5c3d1 100%);
+    height: 60px;
+    width: 50%;
+    margin-top: 5px;
+    background-size: 298%;
+    background-position: 0% 50%, 0% 100%;
+    border-radius: .5rem;
+    transition: background-position 1s ease
+}
+
+#gradient:hover{
+    background-position: 100%;
+}
+
+.menu-item:hover{
+    background-color: grey;
+}
+
+.headers{
+    margin-left: 50px;
+}
+
+.bodytext{
+    margin-left: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .gridcont{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "picture main"
+            "footer footer";
+    }
+
+    .gridabt{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "maina pics"
+            "footer footer";
+    }
+    .menu-item{
+        border: solid white 2px;
+        margin: 10px;
+        border-radius: .5rem;
+        background-color: white;
+    
+    }
+
+    .flowerpic{
+        margin-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .mappic{
+        width: 90%;
+    }
+
+    
+    
+}
